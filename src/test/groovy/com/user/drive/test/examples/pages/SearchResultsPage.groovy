@@ -1,8 +1,8 @@
-package ebay.filter.pages
+package com.user.drive.test.examples.pages
 
-import ebay.filter.domain.SortOptions
-import ebay.filter.pages.modules.SearchResultListingModule
-import ebay.filter.pages.modules.SortResultsModule
+import com.user.drive.test.examples.domain.SortOptions
+import com.user.drive.test.examples.pages.modules.SearchResultListingModule
+import com.user.drive.test.examples.pages.modules.SortResultsModule
 import geb.Page
 import geb.navigator.Navigator
 

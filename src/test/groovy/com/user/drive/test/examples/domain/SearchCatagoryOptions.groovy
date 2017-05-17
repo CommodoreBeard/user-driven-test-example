@@ -1,4 +1,4 @@
-package ebay.filter.domain
+package com.user.drive.test.examples.domain
 
 class SearchCatagoryOptions {
 

@@ -1,6 +1,6 @@
-package ebay.filter.pages
+package com.user.drive.test.examples.pages
 
-import ebay.filter.pages.modules.SearchModule
+import com.user.drive.test.examples.pages.modules.SearchModule
 import geb.Page
 
 class EbayHomePage extends Page {

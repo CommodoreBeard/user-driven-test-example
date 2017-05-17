@@ -1,4 +1,4 @@
-package ebay.filter.pages.modules
+package com.user.drive.test.examples.pages.modules
 
 import geb.Module
 

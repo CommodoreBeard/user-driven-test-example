@@ -1,10 +1,10 @@
-package ebay.filter
+package com.user.drive.test.examples
 
-import ebay.filter.pages.EbayHomePage
-import ebay.filter.pages.SearchResultsPage
-import ebay.filter.domain.ListingFilterOptions
-import ebay.filter.domain.SortOptions
-import ebay.filter.specification.EbayGebSpecification
+import com.user.drive.test.examples.pages.EbayHomePage
+import com.user.drive.test.examples.pages.SearchResultsPage
+import com.user.drive.test.examples.domain.ListingFilterOptions
+import com.user.drive.test.examples.domain.SortOptions
+import com.user.drive.test.examples.specification.EbayGebSpecification
 import spock.lang.Unroll
 
 
@@ -31,10 +31,10 @@ class SearchFilterAndSortSpec extends EbayGebSpecification {
         singlePriceListings().first().freePostage() || singlePriceListings().first().postagePrice() >= minimumPrice
 
         where:
-        listingType                        | sortType
-        ListingFilterOptions.BUY_IT_NOW    | SortOptions.LOW_PRICE
-        ListingFilterOptions.AUCTION       | SortOptions.ENDING_SOONEST
-        ListingFilterOptions.ALL_LISTINGS  | SortOptions.HIGH_PRICE_AND_PP
+        listingType                       | sortType
+        ListingFilterOptions.BUY_IT_NOW   | SortOptions.LOW_PRICE
+        ListingFilterOptions.AUCTION      | SortOptions.ENDING_SOONEST
+        ListingFilterOptions.ALL_LISTINGS | SortOptions.HIGH_PRICE_AND_PP
     }
 
     @Unroll

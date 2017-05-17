@@ -1,10 +1,10 @@
-package ebay.filter
+package com.user.drive.test.examples
 
-import ebay.filter.domain.CatagoryKeywords
-import ebay.filter.domain.SearchCatagoryOptions
-import ebay.filter.pages.EbayHomePage
-import ebay.filter.pages.SearchResultsPage
-import ebay.filter.specification.EbayGebSpecification
+import com.user.drive.test.examples.domain.CatagoryKeywords
+import com.user.drive.test.examples.domain.SearchCatagoryOptions
+import com.user.drive.test.examples.pages.EbayHomePage
+import com.user.drive.test.examples.pages.SearchResultsPage
+import com.user.drive.test.examples.specification.EbayGebSpecification
 import spock.lang.Unroll
 
 class SearchWithinCatagorySpec extends EbayGebSpecification {
