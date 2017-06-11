@@ -12,4 +12,8 @@ class EbayHomePage extends Page {
     static content = {
         search { module SearchModule }
     }
+
+    void searchFor(String input) {
+        search.searchFor(input)
+    }
 }
