@@ -22,7 +22,7 @@ class SearchFilterAndSortSpec extends EbayGebSpecification {
         at SearchResultsPage
 
         and: "The listings match my keyword search with 50 listings in that page."
-        numberOfListings == 50
+        numberOfListings() == 50
 
     @Unroll
     def "Results sorted and filtered in any combination should have a price and shipping info"() {
