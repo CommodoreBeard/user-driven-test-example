@@ -10,6 +10,20 @@ import spock.lang.Unroll
 
 class SearchFilterAndSortSpec extends EbayGebSpecification {
 
+    def "Verify that searching for a keyword yields a results page with 50 listings"() {
+
+        given: "As a user I navigate to the desktop Ebay home page."
+        to EbayHomePage
+
+        when: "I am not logged in, and I enter the string _'iPhone'_ into the search bar, and press the 'Search' button"
+        searchFor "iPhone"
+
+        then: "I am directed to a page of listings"
+        at SearchResultsPage
+
+        and: "The listings match my keyword search with 50 listings in that page."
+        numberOfListings == 50
+
     @Unroll
     def "Results sorted and filtered in any combination should have a price and shipping info"() {
 

@@ -31,6 +31,10 @@ class SearchResultsPage extends Page {
         pages.find("a", class:"pg").find { it.text() == pageNumber.toString() }.click()
     }
 
+    Integer numberOfListings() {
+        searchResultListings.size()
+    }
+
     List<Navigator> singlePriceListings() {
         searchResultListings.findAll { listing ->
             listing.singlePrice()
