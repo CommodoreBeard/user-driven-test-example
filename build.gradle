@@ -52,3 +52,7 @@ test {
     dependsOn drivers.collect { tasks["${it}Test"] }
     enabled = false
 }
+
+task dockerImage(type:Exec) {
+    commandLine './build.sh'
+}
